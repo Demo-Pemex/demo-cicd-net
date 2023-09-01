@@ -7,7 +7,7 @@ jobs:
   iniciar:
     runs-on: ubuntu-latest
     steps:
-      - uses: Demo-Pemex/composite-action-demo@v1.1
+      - uses: Demo-Pemex/composite-action-demo@v1.1.1
         id: saludo
         with:
           nombre-a-saludar: 'Federico'  
