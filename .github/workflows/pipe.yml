@@ -1,1 +1,15 @@
+name: prueba
 
+on:
+  workflow_call:
+
+jobs:
+  iniciar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Demo-Pemex/js-action-demo@v1
+        id: saludo
+        with:
+          a-quien-saludar: 'Jose rodolfo'  
+      - run: "echo la hora del saludo fue a las:${{ steps.saludo.outputs.hora-de-saludar }}"
+ 
