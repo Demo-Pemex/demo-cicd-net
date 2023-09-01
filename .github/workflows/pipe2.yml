@@ -1,0 +1,15 @@
+name: Composite
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  iniciar:
+    runs-on: windows-latest
+    steps:
+      - uses: Demo-Pemex/composite-action-demo@v1
+        id: saludo
+        with:
+          nombre-a-saludar: 'Federico'  
+      - run: |
+          echo "el numero que calculo la action es ${{ steps.saludo.outputs.numero-calculado }}"
