@@ -5,7 +5,7 @@ on:
   
 jobs:
   iniciar:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: Demo-Pemex/composite-action-demo@v1.1
         id: saludo
