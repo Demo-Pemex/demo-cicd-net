@@ -11,5 +11,6 @@ jobs:
         id: saludo
         with:
           a-quien-saludar: 'Jose rodolfo'  
-      - run: "echo la hora del saludo fue a las:${{ steps.saludo.outputs.hora-de-saludar }}"
+      - run: |
+          echo "la hora del saludo fue a las: '${{ steps.saludo.outputs.hora-de-saludar }}'"
  
