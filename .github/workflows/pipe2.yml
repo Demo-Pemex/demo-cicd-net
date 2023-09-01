@@ -1,4 +1,4 @@
-name: Composite
+name: "prueba composite"
 
 on:
   workflow_dispatch:
