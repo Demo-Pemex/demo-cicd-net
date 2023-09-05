@@ -7,5 +7,5 @@ jobs:
   iniciar: 
     uses: Demo-Pemex/template-netframework/.github/workflows/reemplazo.yml@main
     with:
-      variables_json: "{\"Clave1\":\"eba\",\"Clave2\":\"1.0.0\"}"  
+      variables_json: '{"Clave1": "eba","Clave2": "1.0.0"}'
       ambiente: "dev"
