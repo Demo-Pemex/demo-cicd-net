@@ -1,11 +1,11 @@
-name: "sustitucion de variables"
+name: "JSON sustitucion de variables"
 
 on:
   workflow_dispatch:
   
 jobs:
   dev: 
-    uses: Demo-Pemex/template-netframework/.github/workflows/reemplazo.yml@main    
+    uses: Demo-Pemex/template-netframework/.github/workflows/reemplazo_json.yml@main    
     with:      
       ambiente: "dev"
     secrets:  
@@ -13,7 +13,7 @@ jobs:
   
 
   qa: 
-    uses: Demo-Pemex/template-netframework/.github/workflows/reemplazo.yml@main    
+    uses: Demo-Pemex/template-netframework/.github/workflows/reemplazo_json.yml@main    
     with:      
       ambiente: "qa"
     secrets:  
