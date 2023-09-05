@@ -1,0 +1,12 @@
+name: "sustitucion de variables"
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  iniciar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Demo-Pemex/template-netframework/.github/workflows/reemplazo.yml@main         
+        with:
+          variables_json: '{"Clave1":"seba1","Clave2":"1.0.0"}'  
