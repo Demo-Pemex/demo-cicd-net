@@ -8,6 +8,6 @@ jobs:
     uses: Demo-Pemex/template-netframework/.github/workflows/reemplazo.yml@main    
     with:      
       ambiente: "dev"
-      variables_json: "{\"Clave1\": \"seba\",\"Clave2\": \"seba2\"}"
+      variables_json: '{"Clave1": "seba","Clave2": "seba2"}'
     secrets:
       secretos_json: '{"Clave1": "${{ secrets.SECRETO1 }}","Clave2": "${{ secrets.SECRETO2 }}"}'
