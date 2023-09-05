@@ -9,4 +9,4 @@ jobs:
     secrets: inherit      
     with:      
       ambiente: "dev"
-      variables_json: '{"Clave1": "${{ secrets.SECRETO1 }}","Clave2": "${{ vars.VARIABLE1 }}"}'
+      variables_json: '{"Clave1": "seba","Clave2": "${{ vars.VARIABLE1 }}"}'
