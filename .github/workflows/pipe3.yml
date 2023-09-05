@@ -9,7 +9,7 @@ jobs:
     with:      
       ambiente: "dev"
     secrets:  
-      secretos_json: '{"Clave1": "${{ secrets.SECRETO1 }}","Clave2": "${{ secrets.SECRETO2 }}","Clave2": "${{ vars.VARIABLE1 }}"}'
+      secretos_json: '{"Clave1": "${{ secrets.SECRETO1 }}","Clave2": "${{ secrets.SECRETO2 }}","VARIABLE1": "${{ vars.VARIABLE1 }}"}'
   
 
   qa: 
