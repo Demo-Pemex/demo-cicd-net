@@ -8,6 +8,11 @@ jobs:
     uses: Demo-Pemex/template-netframework/.github/workflows/reemplazo_inherith.yml@main    
     with:      
       ambiente: "dev"
+    secrets: inherit
+  qa: 
+    uses: Demo-Pemex/template-netframework/.github/workflows/reemplazo_inherith.yml@main    
+    with:      
+      ambiente: "qa"
     secrets: inherit 
   
  
