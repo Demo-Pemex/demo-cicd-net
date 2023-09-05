@@ -1,0 +1,13 @@
+name: "inherit sustitucion de variables"
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  dev: 
+    uses: Demo-Pemex/template-netframework/.github/workflows/reemplazo_inherith.yml@main    
+    with:      
+      ambiente: "dev"
+    secrets: inherit 
+  
+ 
