@@ -6,7 +6,6 @@ on:
 jobs:
   iniciar: 
     uses: Demo-Pemex/template-netframework/.github/workflows/reemplazo.yml@main
-    secrets:
-      variables_json: '{"Clave1": "${{ secrets.SECRETO1 }}","Clave2": "${{ vars.VARIABLE1 }}"}'
+    secrets: inherit      
     with:      
       ambiente: "dev"
