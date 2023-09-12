@@ -8,7 +8,7 @@ on:
 env:
   #reponame tolower
 
-  reponame: demopemex/imagendocer
+  reponame: demo-pemex/demo-cicd-net
   registry: ghcr.io
 jobs:
   push-registry:
@@ -22,7 +22,8 @@ jobs:
         with:
           context: src/
           push: true
-          tags: ${{ env.registry }}/${{ env.reponame }}:${{ github.sha }}
+          #pass reponame tolower case
+          tags: ${{ env.registry }}/${{ env.reponame }}:latest
           build-args: |
             --build-arg BUILDKIT_INLINE_CACHE=1
             --build-arg BUILDKIT_INLINE_CACHE_REMAP=1
